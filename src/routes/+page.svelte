@@ -4,6 +4,7 @@
     let sizes: Array<string> = ["tiny", "scriptsize", "footnotesize", "small", "normalsize", "large", "Large", "LARGE", "huge", "Huge"]; 
     let size: string = "";
     let result = `\\${size} \\color{${color}} \\colorbox{${backgroundcolor}} { text }`;
+    $: result = `\\${size} \\color{${color}} \\colorbox{${backgroundcolor}} { text }`;
 </script>
 
 <style>
